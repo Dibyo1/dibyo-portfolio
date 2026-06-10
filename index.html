@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Dibyajyoti Biswas — Data Scientist</title>
+    <meta name="description" content="Portfolio of Dibyajyoti Biswas, a B.Sc. Data Science student turning raw data into decisions." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/style.css" />
+
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Preloader -->
+    <section class="preloader" id="preloader">
+      <div class="preloader-content">
+        <div class="counter" id="preloader-counter">00</div>
+        <div class="preloader-text">INITIALIZING PORTFOLIO</div>
+      </div>
+      <div class="preloader-split preloader-top"></div>
+      <div class="preloader-split preloader-bottom"></div>
+    </section>
+
+    <!-- Nav -->
+    <nav class="nav" id="nav">
+      <div class="nav-container">
+        <div class="nav-logo">DB.</div>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero section" id="hero">
+      <canvas class="hero-canvas" id="hero-canvas"></canvas>
+      <div class="hero-container container">
+        <div class="hero-top">
+          <div class="hero-name opacity-0" id="hero-name">DIBYAJYOTI BISWAS</div>
+          <div class="hero-badge">
+            <span class="dot"></span>
+            AVAILABLE FOR INTERNSHIP
+          </div>
+        </div>
+        
+        <div class="hero-center">
+          <h1 class="hero-title" id="hero-title-1">TURNING DATA</h1>
+          <h1 class="hero-title" id="hero-title-2">INTO DECISIONS.</h1>
+          <p class="hero-subtitle">Data Science Student · ML Engineer · Kolkata, India</p>
+        </div>
+        
+        <div class="hero-bottom">
+          <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>SCROLL</span>
+            <svg class="scroll-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+          </div>
+          <div class="hero-side-text">B.SC. DATA SCIENCE — 2024/2028</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <section class="marquee-section">
+      <div class="marquee">
+        <div class="marquee-content">
+          <span>PYTHON</span> <span class="dot-sep">·</span>
+          <span>SQL</span> <span class="dot-sep">·</span>
+          <span>NUMPY</span> <span class="dot-sep">·</span>
+          <span>PANDAS</span> <span class="dot-sep">·</span>
+          <span>SCIKIT-LEARN</span> <span class="dot-sep">·</span>
+          <span>MATPLOTLIB</span> <span class="dot-sep">·</span>
+          <span>SEABORN</span> <span class="dot-sep">·</span>
+          <span>OPENCV</span> <span class="dot-sep">·</span>
+          <span>MYSQL</span> <span class="dot-sep">·</span>
+          <span>MS EXCEL</span> <span class="dot-sep">·</span>
+          <span>MACHINE LEARNING</span> <span class="dot-sep">·</span>
+          <span>DEEP LEARNING</span> <span class="dot-sep">·</span>
+          <span>GENERATIVE AI</span> <span class="dot-sep">·</span>
+          <span>COMPUTER VISION</span> <span class="dot-sep">·</span>
+        </div>
+        <div class="marquee-content">
+          <span>PYTHON</span> <span class="dot-sep">·</span>
+          <span>SQL</span> <span class="dot-sep">·</span>
+          <span>NUMPY</span> <span class="dot-sep">·</span>
+          <span>PANDAS</span> <span class="dot-sep">·</span>
+          <span>SCIKIT-LEARN</span> <span class="dot-sep">·</span>
+          <span>MATPLOTLIB</span> <span class="dot-sep">·</span>
+          <span>SEABORN</span> <span class="dot-sep">·</span>
+          <span>OPENCV</span> <span class="dot-sep">·</span>
+          <span>MYSQL</span> <span class="dot-sep">·</span>
+          <span>MS EXCEL</span> <span class="dot-sep">·</span>
+          <span>MACHINE LEARNING</span> <span class="dot-sep">·</span>
+          <span>DEEP LEARNING</span> <span class="dot-sep">·</span>
+          <span>GENERATIVE AI</span> <span class="dot-sep">·</span>
+          <span>COMPUTER VISION</span> <span class="dot-sep">·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-left">
+          <div class="section-label">( ABOUT ME )</div>
+          <h2 class="about-heading split-text">B.Sc. Data Science student who turns raw, messy data into business decisions.</h2>
+          <p class="about-text">Currently in 2nd year at Techno India University, Kolkata. Passionate about machine learning, predictive modelling, and agentic AI. I build models that solve real problems — churn prediction, fraud detection, and beyond.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number"><span class="counter-target" data-target="8.55" data-decimals="2">0.00</span></div>
+              <div class="stat-label">CGPA</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number"><span class="counter-target" data-target="3" data-decimals="0">0</span>+</div>
+              <div class="stat-label">ML Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number"><span class="counter-target" data-target="94.7" data-decimals="1">0.0</span>%</div>
+              <div class="stat-label">Best Model Accuracy</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-photo-wrap">
+          <div class="about-photo-frame">
+            <img src="/dibyajyoti.png" alt="Dibyajyoti Biswas" class="about-photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-label">( TECHNICAL SKILLS )</div>
+        <h2 class="section-heading">TOOLS OF THE TRADE</h2>
+        
+        <div class="skills-wrapper">
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Languages</h3>
+            <div class="chip-container">
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">SQL</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Libraries</h3>
+            <div class="chip-container">
+              <span class="skill-chip">NumPy</span>
+              <span class="skill-chip">Pandas</span>
+              <span class="skill-chip">Matplotlib</span>
+              <span class="skill-chip">Seaborn</span>
+              <span class="skill-chip">Scikit-Learn</span>
+              <span class="skill-chip">OpenCV</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Tools</h3>
+            <div class="chip-container">
+              <span class="skill-chip">MS Excel</span>
+              <span class="skill-chip">MySQL</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Statistics</h3>
+            <div class="chip-container">
+              <span class="skill-chip">Descriptive Statistics</span>
+              <span class="skill-chip">Inferential Statistics</span>
+              <span class="skill-chip">Regression Analysis</span>
+              <span class="skill-chip">Hypothesis Testing</span>
+              <span class="skill-chip">ANOVA</span>
+              <span class="skill-chip">Bayesian Statistics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-label">( ACADEMIC PROJECTS )</div>
+        <h2 class="section-heading split-text">WORK THAT SPEAKS.</h2>
+        
+        <div class="projects-grid">
+          <a class="project-card" href="https://github.com/Dibyo1/Customer-Churn-Prediction" target="_blank" rel="noopener">
+            <div class="project-tag">Python, Scikit-Learn</div>
+            <div class="project-num">01</div>
+            <h3 class="project-title">Customer Churn Prediction</h3>
+            <ul class="project-bullets">
+              <li>Churn classification model on telecom data enabling data-driven retention decisions</li>
+              <li>Optimised precision-recall trade-off to minimise false negatives</li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-badge">94.7% Accuracy</div>
+              <div class="project-github">View on GitHub →</div>
+            </div>
+          </a>
+          
+          <a class="project-card" href="https://github.com/Dibyo1/Vehicle-Fraud-Detection" target="_blank" rel="noopener">
+            <div class="project-tag">Python, Pandas</div>
+            <div class="project-num">02</div>
+            <h3 class="project-title">Vehicle Insurance Fraud Detection</h3>
+            <ul class="project-bullets">
+              <li>Fraud detection via EDA-driven feature selection on insurance claims data</li>
+              <li>Trend &amp; pattern analysis to identify anomalous claims</li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-badge">89.0% Accuracy</div>
+              <div class="project-github">View on GitHub →</div>
+            </div>
+          </a>
+          
+          <a class="project-card" href="https://github.com/Dibyo1/TurnOver-Rate" target="_blank" rel="noopener">
+            <div class="project-tag">Python, Pandas, Scikit-Learn</div>
+            <div class="project-num">03</div>
+            <h3 class="project-title">Employee Turnover Prediction</h3>
+            <ul class="project-bullets">
+              <li>Predictive turnover model translating HR data into actionable retention insights</li>
+              <li>Encoded and processed structured HR datasets for cross-functional decisions</li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-badge">HR Analytics</div>
+              <div class="project-github">View on GitHub →</div>
+            </div>
+          </a>
+          
+          <a class="project-card" href="https://github.com/Dibyo1/JARVIS-AI" target="_blank" rel="noopener">
+            <div class="project-tag">Python, NLP, APIs</div>
+            <div class="project-num">04</div>
+            <h3 class="project-title">JARVIS Voice Assistant</h3>
+            <ul class="project-bullets">
+              <li>Voice assistant with wake-word detection, NLP query handling, text-to-speech</li>
+              <li>Integrates live news APIs, web search, music playback, general knowledge</li>
+            </ul>
+            <div class="project-footer">
+              <div class="project-badge">Interactive</div>
+              <div class="project-github">View on GitHub →</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-label">( EDUCATION )</div>
+        <h2 class="section-heading">THE FOUNDATION</h2>
+        
+        <div class="edu-timeline">
+          <div class="timeline-line"></div>
+          <div class="timeline-progress" id="timeline-progress"></div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="edu-year">2024–2028</div>
+              <h3 class="edu-title">B.Sc. in Data Science</h3>
+              <p class="edu-inst">Techno India University, Kolkata — CGPA: 8.55</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="edu-year">Class XII</div>
+              <h3 class="edu-title">Higher Secondary</h3>
+              <p class="edu-inst">Burdwan Model School — 71.6%</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="edu-year">Class X</div>
+              <h3 class="edu-title">Secondary</h3>
+              <p class="edu-inst">St. Xavier's School — 84.4%</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon">📜</div>
+            <div class="cert-info">
+              <h4 class="cert-title">Data Science Course</h4>
+              <p class="cert-inst">CodeWithHarry</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">📜</div>
+            <div class="cert-info">
+              <h4 class="cert-title">Data Analytics Course</h4>
+              <p class="cert-inst">CodeWithHarry</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements section" id="achievements">
+      <div class="container">
+        <div class="section-label">( ACHIEVEMENTS )</div>
+        <h2 class="section-heading">BEYOND THE SCREEN</h2>
+        
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon">🥉</div>
+            <h3 class="achievement-title">Bronze Medal</h3>
+            <p class="achievement-desc">International General Knowledge Olympiad (IGKO)</p>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">⚽</div>
+            <h3 class="achievement-title">U-19 Runner-Up</h3>
+            <p class="achievement-desc">Inter-School Football Tournament, 2023 · St. Xavier's School</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <section class="contact section" id="contact">
+      <div class="container contact-container">
+        <h2 class="contact-heading">
+          <span class="split-chars">LET'S BUILD SOMETHING</span>
+          <span class="split-chars">TOGETHER.</span>
+        </h2>
+        
+        <div class="contact-links">
+          <a href="mailto:dibyajyotibiswas107@gmail.com" class="contact-row">
+            <span class="contact-text">dibyajyotibiswas107@gmail.com</span>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="tel:+919434616472" class="contact-row">
+            <span class="contact-text">+91 9434616472</span>
+            <span class="contact-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="contact-social">
+          <a href="https://linkedin.com/in/dibyajyoti-biswas" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <span class="social-label">LinkedIn</span>
+          </a>
+          <a href="https://github.com/Dibyo1" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+            <span class="social-label">GitHub</span>
+          </a>
+        </div>
+        
+        <footer class="footer">
+          <div class="footer-left">© 2025 Dibyajyoti Biswas · Kolkata, West Bengal</div>
+          <div class="footer-center">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-right">Designed with Motion</div>
+        </footer>
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
