@@ -758,3 +758,19 @@ body {
     text-align: center;
   }
 }
+.nav-cv-btn {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--accent) !important;
+  color: var(--accent) !important;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-decoration: none !important;
+  transition: background 0.3s, color 0.3s;
+  display: inline-block;
+}
+.nav-cv-btn:hover {
+  background: var(--accent) !important;
+  color: #000 !important;
+}
